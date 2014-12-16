@@ -13,7 +13,13 @@ streams are composable
   can pass stream to another stream
 
 
+```
+Enum.each 1..3, &(IO.puts/1)
 
+[1,2,3] |> Enum.each(&IO.puts/1)
+
+(1..3) |> Enum.each(&IO.puts/1)
+```
 
 
 
